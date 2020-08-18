@@ -20,6 +20,10 @@ public class Test2 {
     CreateResponse createResp = responseCreate.getData();
     createResp.create();
 
+    // uhm..
+    responseRead = executor.execute(false);
+    readResp = responseRead.getData();
+    readResp.read();
   }
 
 }

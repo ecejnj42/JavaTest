@@ -29,9 +29,18 @@ public static void createTestB( ) {
 
 
   public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, ClassNotFoundException {
+    while (true) {
     System.out.println("Hi there");
     createClass(Class.forName("test1.TestA"));
+    
     createClass(Class.forName("test1.TestB"));
+    try {
+      Thread.sleep(1000);
+    } catch (InterruptedException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    }
   }
 
 }

@@ -11,7 +11,7 @@ public class EchoTest {
   Process server;
   AtomicBoolean run = new AtomicBoolean(true);
   //EchoClient client;
-public final static int THREADS = 100;
+public final static int THREADS = 2;//100;
 public final static int THREAD_WAIT_MILLIS = 100;
 
 
@@ -82,7 +82,7 @@ public final static int THREAD_WAIT_MILLIS = 100;
         // TODO Auto-generated catch block
         e.printStackTrace();
       }
-  };
+    };
     return runnable;
   }
   
